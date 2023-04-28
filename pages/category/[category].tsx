@@ -73,7 +73,7 @@ export const getServerSideProps : GetServerSideProps = async ({ query }) =>{
       },
     },
     pagination : {
-      page : query.page ? +query.page : 1, 
+      page : query.page ? +query.page : 3, 
       pageSize : 3,
     },
   };
