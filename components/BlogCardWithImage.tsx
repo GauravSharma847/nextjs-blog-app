@@ -15,9 +15,11 @@ const BlogCardWithImage = ({ article }: IPropType) => {
             </Link> */}
 
             <div className='lg:text-center'>
-                <span className="text-2xl w-2/3 text-white p-6 font-bold md:text-xl sm:text-lg after:content-[''] after:bg-primary after:block after:w-16 after:h-1 after:rounded-md after:mt-2 after:ml-6 cursor-pointer after:lg:ml-8  ">
-                    {article.attributes.Title}
-                </span>
+                <Link href={`/article/${article.attributes.Slug}`}>
+                    <span className="text-2xl w-2/3 text-white p-6 font-bold md:text-xl sm:text-lg after:content-[''] after:bg-primary after:block after:w-16 after:h-1 after:rounded-md after:mt-2 after:ml-6 cursor-pointer after:lg:ml-8  ">
+                        {article.attributes.Title}
+                    </span>
+                </Link>
             </div>
             <Image src="/gitbook3.svg" width={140} height={140} alt="" />
         </div>
