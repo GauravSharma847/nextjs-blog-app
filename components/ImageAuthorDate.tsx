@@ -33,3 +33,7 @@ const ImageAuthorDate = ({article} : IPropType) => {
 }
 
 export default ImageAuthorDate
+
+
+
+

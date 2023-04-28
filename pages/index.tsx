@@ -1,5 +1,4 @@
 import Image from 'next/image';
-// import { Inter } from 'next/font/google'
 import Head from 'next/head';
 import { GetServerSideProps, NextPage } from 'next';
 import { fetchArticles, fetchCategories } from '../http/index';
@@ -8,13 +7,11 @@ import { AxiosResponse } from 'axios';
 import Tabs from '@/components/Tabs';
 import ArticleList from '@/components/ArticleList';
 import qs from 'qs';
-import Link from 'next/link';
 import Pagination from '@/components/Pagination';
 import { useRouter } from 'next/router';
 import { debounce } from '@/utils';
 
 
-// const inter = Inter({ subsets: ['latin'] })
 interface IPropTypes {
   categories : {
     items : ICategory[];

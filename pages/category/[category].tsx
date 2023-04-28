@@ -1,6 +1,5 @@
 import Tabs from '@/components/Tabs'
 import Head from 'next/head'
-import Link from 'next/link'
 import React from 'react'
 import { GetServerSideProps } from 'next';
 import { fetchArticles, fetchCategories } from '@/http';

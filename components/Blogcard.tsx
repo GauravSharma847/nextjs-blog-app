@@ -1,8 +1,6 @@
 import React from 'react'
 import {IArticle } from '@/types'
 import Link from 'next/link';
-import Image from 'next/image';
-import { formatDate } from '@/utils';
 import ImageAuthorDate from './ImageAuthorDate';
 
 export interface IPropType {
@@ -26,3 +24,7 @@ const Blogcard = ({article} : IPropType) => {
 }
 
 export default Blogcard
+
+
+
+
