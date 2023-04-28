@@ -15,7 +15,7 @@ const BlogCardWithImage = ({article} : IPropType) => {
             </span>
         </Link>
 
-        <Image src = "/book.png" width={140} height={140}  alt = "" />
+        <Image src = "/gitbook.svg" width={140} height={140}  alt = "" />
     </div>
   )
 }
