@@ -13,7 +13,7 @@ const BlogCardWithImage = ({ article }: IPropType) => {
                     {article.attributes.Title}
                 </span>
             </Link>
-            <Image src="/gitbook.svg" width={140} height={140} alt ="" />
+            <Image src="/gitbook3.svg" width={140} height={140} alt ="" />
         </div>
     );
 };
