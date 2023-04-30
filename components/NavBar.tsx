@@ -16,7 +16,7 @@ const NavBar = () => {
 
         <ul className='flex items-center'>
             <li className='mr-6 font-medium text-gray-600'>
-                <a href="#">Products</a>    
+                <a href="https://my-store-da4c5e.creator-spring.com/listing/death-star-2023?fbclid=IwAR0W66rE1qtEnc3_bKCtzYNYR-jVWDga3ANlJkMhh04q4lsHi94K0zjyYBM">Products</a>    
             </li>
             <li className='mr-6 font-medium text-gray-600'>
                 <a href="#">Pricing</a>    
