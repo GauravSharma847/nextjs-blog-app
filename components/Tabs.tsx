@@ -15,6 +15,8 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
         // console.log("1st->",category.attributes.Slug)
         // console.log(router)
         // console.log("2nd",router.query.Category)
+        // console.log("Categories",category.id);
+
     }
    
     // console.log(router)
@@ -28,14 +30,14 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
                         ? 'border-b-primary text-primary'
                         : 'border-white text-gray-400'
                     }`
-                }>
+                } >
                     <Link href="/" >Recent</Link>
                 </li>
 
-                {
+                {   
                     categories.map(category => {
                         return (
-                            <>
+                            <div  key = {category.id}>
                                 <li key = {category.id}
                                 className={'mr-6 pb-6 border-b-4 rounded-sm ' +
                                     `${isActiveLink(category)
@@ -45,7 +47,7 @@ const Tabs = ({ categories, handleOnSearch }: IPropType) => {
                                 }>
                                     <Link href={`/category/${category.attributes.Slug}`}>{category.attributes.Title}</Link>
                                 </li>
-                            </>
+                            </div>
                         )
                     })
                 }

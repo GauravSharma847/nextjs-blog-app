@@ -37,6 +37,7 @@ const Category = ({categories, articles, slug} : IPropType) => {
   const handleSearch = (query : string) => {
     router.push(`/category/${categorySlug}/?search=${query}`);
   } 
+  console.log(categories.items);
   return (
     <>
       <Head>
