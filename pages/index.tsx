@@ -57,7 +57,7 @@ const Home: NextPage<IPropTypes> = ({categories, articles})=> {
 
 // Since blog needs rendering  thats why I am using this function , it works only in pages folder , it tells nextjs that this component needs server side rendering 
 export const getServerSideProps: GetServerSideProps = async ({query}) => {   // this function has special type GetServerSideProps 
-  console.log(query)
+  console.log("Query",query)
 
   const options : Partial<IQueryOptions>= {
     populate : ['author.avatar'],
@@ -67,13 +67,15 @@ export const getServerSideProps: GetServerSideProps = async ({query}) => {   // 
       pageSize : 3,
     },
   };
-
+  try{
   if(query.search) {
     options.filters = {
       Title : {
         $containsi: query.search
       },
     }
+  }}catch{
+    
   }
   const queryString = qs.stringify(options);
   //Articles
