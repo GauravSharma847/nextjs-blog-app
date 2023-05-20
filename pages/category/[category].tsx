@@ -111,7 +111,7 @@ export const getServerSideProps : GetServerSideProps = async ({ query }) =>{
   }
 }
 
-export default Category
+export default Category;
 
 
 
